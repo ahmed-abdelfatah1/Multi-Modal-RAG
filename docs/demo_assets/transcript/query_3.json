@@ -1,0 +1,61 @@
+{
+  "id": "query_3",
+  "label": "Primary corpus, hybrid recovers vision miss",
+  "query": "How have communities adapted their recycling programs?",
+  "retrieved": [
+    {
+      "rank": 1,
+      "source_type": "page",
+      "doc_id": "4bb3a383-85e5-4cd8-9c7e-3f9fb7853f81.pdf",
+      "page_number": 18,
+      "score": 0.03177805800756621
+    },
+    {
+      "rank": 2,
+      "source_type": "page",
+      "doc_id": "875fa820-331a-4720-9d38-b13d5b8cf5e8.pdf",
+      "page_number": 136,
+      "score": 0.01639344262295082
+    },
+    {
+      "rank": 3,
+      "source_type": "text",
+      "doc_id": "875fa820-331a-4720-9d38-b13d5b8cf5e8.pdf",
+      "page_number": 41,
+      "score": 0.016129032258064516
+    },
+    {
+      "rank": 4,
+      "source_type": "page",
+      "doc_id": "4bb3a383-85e5-4cd8-9c7e-3f9fb7853f81.pdf",
+      "page_number": 37,
+      "score": 0.016129032258064516
+    },
+    {
+      "rank": 5,
+      "source_type": "text",
+      "doc_id": "875fa820-331a-4720-9d38-b13d5b8cf5e8.pdf",
+      "page_number": 108,
+      "score": 0.015873015873015872
+    },
+    {
+      "rank": 6,
+      "source_type": "page",
+      "doc_id": "875fa820-331a-4720-9d38-b13d5b8cf5e8.pdf",
+      "page_number": 101,
+      "score": 0.015873015873015872
+    }
+  ],
+  "answer": {
+    "answer": "Communities have adapted their recycling programs in various ways, including changing collection frequencies and methods. For instance, Austin, Texas, switched to weekly collection of recyclables and moved from manual to semi-automated rearload vehicles. Central Virginia Waste Management Authority also transitioned to weekly collection of recyclables. Edmond, Oklahoma, reduced its recycling collection to once per week and replaced manual rearload collection vehicles with fully automated sideloaders. Greensboro, North Carolina, also reduced its recycling collection frequency to once per week. Houston, Texas, implemented pilot studies to reduce collection frequency and added yard trimmings collection. Indianapolis, Indiana, reduced recycling collection to once per week and adopted automated sideloaders for both recyclables and yard trimmings [4bb3a383-85e5-4cd8-9c7e-3f9fb7853f81.pdf p.18].",
+    "citations": [
+      {
+        "doc_id": "4bb3a383-85e5-4cd8-9c7e-3f9fb7853f81.pdf",
+        "page_number": 18,
+        "snippet": "Several communities, including Austin, Central Virginia, Edmond, Greensboro, Houston, and Indianapolis, have modified their recycling programs by altering collection frequency and adopting automated collection vehicles."
+      }
+    ],
+    "confidence": "high",
+    "missing_info": null
+  }
+}

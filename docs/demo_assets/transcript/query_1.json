@@ -1,0 +1,66 @@
+{
+  "id": "query_1",
+  "label": "Primary corpus, both channels hit",
+  "query": "What types of revenue should MMS account for as a custodial activity?",
+  "retrieved": [
+    {
+      "rank": 1,
+      "source_type": "page",
+      "doc_id": "18b0d914-cdcf-4cb9-b638-ad03478c44a4.pdf",
+      "page_number": 132,
+      "score": 0.03278688524590164
+    },
+    {
+      "rank": 2,
+      "source_type": "text",
+      "doc_id": "68349c6d-3980-467c-a518-05b509218d54.pdf",
+      "page_number": 21,
+      "score": 0.016129032258064516
+    },
+    {
+      "rank": 3,
+      "source_type": "page",
+      "doc_id": "26a0b975-3e05-44a8-a0d9-6741f6bfda08.pdf",
+      "page_number": 40,
+      "score": 0.016129032258064516
+    },
+    {
+      "rank": 4,
+      "source_type": "text",
+      "doc_id": "0adf903b-924b-414c-b7e1-14b7fc3ccdbb.pdf",
+      "page_number": 50,
+      "score": 0.015873015873015872
+    },
+    {
+      "rank": 5,
+      "source_type": "page",
+      "doc_id": "ef6bc11c-6fc0-413e-8195-979067747a58.pdf",
+      "page_number": 6,
+      "score": 0.015873015873015872
+    },
+    {
+      "rank": 6,
+      "source_type": "text",
+      "doc_id": "68349c6d-3980-467c-a518-05b509218d54.pdf",
+      "page_number": 77,
+      "score": 0.015625
+    }
+  ],
+  "answer": {
+    "answer": "The Minerals Management Service (MMS) should account for exchange revenue as a custodial activity. This includes rents, royalties, and bonuses that are collected on behalf of the General Fund, states, Indian tribes, and allottees. The revenue amounts should be recognized and measured according to the exchange revenue standards when they are due based on contractual agreements [18b0d914-cdcf-4cb9-b638-ad03478c44a4.pdf p.132]. Additionally, proceeds from the auctioning of radio spectrum, where the Federal Communications Commission (FCC) collects revenue on behalf of the U.S. Government, should also be treated as exchange revenue for a custodial activity [18b0d914-cdcf-4cb9-b638-ad03478c44a4.pdf p.132].",
+    "citations": [
+      {
+        "doc_id": "18b0d914-cdcf-4cb9-b638-ad03478c44a4.pdf",
+        "page_number": 132,
+        "snippet": "MMS should consider exchange revenue as a custodial activity, including rents, royalties, and bonuses collected for the General Fund, states, Indian tribes, and allottees, and recognize these amounts based on contractual agreements."
+      },
+      {
+        "doc_id": "18b0d914-cdcf-4cb9-b638-ad03478c44a4.pdf",
+        "page_number": 132,
+        "snippet": "The FCC should also treat proceeds from radio spectrum auctions as exchange revenue for a custodial activity, as it collects these funds for the U.S. Government."
+      }
+    ],
+    "confidence": "high",
+    "missing_info": null
+  }
+}

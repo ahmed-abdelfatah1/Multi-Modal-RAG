@@ -1,0 +1,78 @@
+{
+  "id": "query_2",
+  "label": "Secondary corpus (BIS), table/chart dominant",
+  "query": "What does the BIS say about non-bank financial intermediation risks in 2024?",
+  "source": "Captured from Streamlit UI (docs/demo_assets/screenshots/query_2_answer.png). Supersedes the earlier scripts/capture_demo.py run which returned 'I cannot answer' — top_k differs (app uses 8, script used 6) so the annual-report p.17 chunk was in-context for the UI call but not for the script call.",
+  "retrieved": [
+    {
+      "rank": 1,
+      "source_type": "page",
+      "doc_id": "bis_annual_report_2024",
+      "page_number": 17,
+      "score": null,
+      "note": "Primary cited source in the UI; rendered first in the UI 'sources' panel."
+    },
+    {
+      "rank": 2,
+      "source_type": "text",
+      "doc_id": "bis_quarterly_review_2024q3",
+      "page_number": 4,
+      "score": 0.032
+    },
+    {
+      "rank": 3,
+      "source_type": "text",
+      "doc_id": "bis_annual_report_2024",
+      "page_number": 13,
+      "score": 0.030
+    },
+    {
+      "rank": 4,
+      "source_type": "page",
+      "doc_id": "bis_quarterly_review_2024q3",
+      "page_number": 91,
+      "score": 0.016
+    },
+    {
+      "rank": 5,
+      "source_type": "text",
+      "doc_id": "bis_annual_report_2024",
+      "page_number": 1,
+      "score": 0.016
+    },
+    {
+      "rank": 6,
+      "source_type": "page",
+      "doc_id": "bis_annual_report_2024",
+      "page_number": 37,
+      "score": 0.016
+    },
+    {
+      "rank": 7,
+      "source_type": "text",
+      "doc_id": "bis_quarterly_review_2024q3",
+      "page_number": 1,
+      "score": 0.016
+    },
+    {
+      "rank": 8,
+      "source_type": "page",
+      "doc_id": "bis_quarterly_review_2024q3",
+      "page_number": 77,
+      "score": 0.016
+    }
+  ],
+  "answer": {
+    "answer": "The BIS emphasizes that the current macroprudential framework, developed after the Great Financial Crisis, needs to be strengthened to fully address risks in the non-bank financial intermediation sector. This requires clear policy mandates ...",
+    "citations": [
+      {
+        "doc_id": "bis_annual_report_2024",
+        "page_number": 17,
+        "snippet": "Primary citation: the BIS Annual Report page on strengthening the post-GFC macroprudential framework for NBFI risks."
+      }
+    ],
+    "confidence": "high",
+    "missing_info": null
+  },
+  "capture_notes": "Answer text is truncated at the ellipsis because the UI capture did not include the full response text. If the full answer is needed for the video, re-run the query in the app (cache will serve it for free) and copy the complete paragraph."
+}

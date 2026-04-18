@@ -1,0 +1,44 @@
+%%{init: {"flowchart": {"htmlLabels": true}, "theme": "neutral"}}%%
+flowchart LR
+    %% inputs
+    HF[HF dataset<br/>vidore/syntheticDocQA]:::ingest
+    PDF[Raw PDFs<br/>BIS reports]:::ingest
+
+    %% ingestion
+    DOCLING[Docling<br/>+ pdf2image<br/>tables, no OCR]:::ingest
+
+    %% indexing
+    COLSMOL[ColSmol-256M<br/>multi-vector<br/>bfloat16]:::index
+    BGE[bge-small-en-v1.5<br/>dense 384-d]:::index
+    QPAGES[(Qdrant<br/>pages<br/>MaxSim + bin-quant)]:::index
+    QTEXT[(Qdrant<br/>text<br/>cosine)]:::index
+
+    %% query
+    Q[User query]:::query
+    RRF{{RRF fusion<br/>k=60}}:::query
+    GEMINI[Gemini 2.5 Flash<br/>thinking=0<br/>structured JSON]:::query
+    VAL[Validator<br/>citations match?]:::query
+    UI[Streamlit UI<br/>answer + sources]:::query
+
+    %% edges
+    HF --> COLSMOL
+    PDF --> DOCLING
+    DOCLING --> COLSMOL
+    DOCLING --> BGE
+
+    COLSMOL --> QPAGES
+    BGE --> QTEXT
+
+    Q --> QPAGES
+    Q --> QTEXT
+    QPAGES --> RRF
+    QTEXT --> RRF
+    RRF --> GEMINI
+    GEMINI --> VAL
+    VAL -- "regen ≤1x" --> GEMINI
+    VAL --> UI
+
+    %% phases
+    classDef ingest fill:#e3f2fd,stroke:#1976d2,color:#0d47a1;
+    classDef index  fill:#e8f5e9,stroke:#2e7d32,color:#1b5e20;
+    classDef query  fill:#fff3e0,stroke:#ef6c00,color:#bf360c;

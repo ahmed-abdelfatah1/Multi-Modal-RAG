@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(uv run *)",
+      "Bash(break)",
+      "Bash(\"A:/YEAR 4/SPRING 2025/DSAI 490/assignment-1/.venv/Scripts/ruff.exe\" check src/app)"
+    ]
+  }
+}
